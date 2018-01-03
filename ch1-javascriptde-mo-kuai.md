@@ -42,7 +42,7 @@
 
 ```js
 // gogogo.js
-function SayModule () {
+function Gogogo () {
     this.hello = function () {
         console.log('hello');
     };
