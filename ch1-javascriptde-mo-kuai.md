@@ -60,21 +60,9 @@ var g = new Go();
 g.hello(); // hello
 ```
 
+## Node.js
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Node.js基于CommonJS实现了模块化，其形式（由于在服务端的流行而不正确地）被称为 CommonJS
 
 
 
