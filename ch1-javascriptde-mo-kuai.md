@@ -52,13 +52,51 @@ function Gogogo () {
     };
 }
 
-module.exports = SayModule;
+module.exports = Gogogo;
 
 // main.js 引入 gogogo.js
 var Say = require('./sayModule.js');
 var sayer = new Say();
 sayer.hello(); //hello
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
