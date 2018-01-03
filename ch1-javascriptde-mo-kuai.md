@@ -42,12 +42,12 @@
 
 ```js
 // gogogo.js
-function Gogogo () {
-    this.hello = function () {
+function Gogogo() {
+    this.hello = function() {
         console.log('hello');
     };
 
-    this.goodbye = function () {
+    this.goodbye = function() {
         console.log('goodbye');
     };
 }
@@ -55,10 +55,14 @@ function Gogogo () {
 module.exports = Gogogo;
 
 // main.js 引入 gogogo.js
-var Say = require('./sayModule.js');
-var sayer = new Say();
-sayer.hello(); //hello
+var Go = require('./Gogogo.js');
+var g = new Go();
+g.hello(); // hello
 ```
+
+
+
+
 
 
 
