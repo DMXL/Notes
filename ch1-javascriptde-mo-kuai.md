@@ -6,6 +6,8 @@
 
 ---
 
+## TOC
+
 * **介绍**
   * 模块的优点
 * **CommonJS**
@@ -31,6 +33,32 @@
   * 实例
 
 ---
+
+## CommonJS
+
+* CommonJS 规范的主要适用场景是**服务器端编程**，所以采用**同步加载**模块的策略。如果我们依赖3个模块，代码会一个一个依次加载它们
+* 该模块实现方案主要包含 **require** 与 **module** 这两个关键字，其允许某个模块对外暴露部分接口并且由其他模块导入使用
+* CommonJS 需要一个兼容的脚本加载器作为前提条件，该脚本加载器必须支持名为 **require** 和 **module.exports** 的函数，它们将模块相互导入导出
+
+```js
+// gogogo.js
+function SayModule () {
+    this.hello = function () {
+        console.log('hello');
+    };
+
+    this.goodbye = function () {
+        console.log('goodbye');
+    };
+}
+
+module.exports = SayModule;
+
+// main.js 引入 gogogo.js
+var Say = require('./sayModule.js');
+var sayer = new Say();
+sayer.hello(); //hello
+```
 
 
 
