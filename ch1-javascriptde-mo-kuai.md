@@ -4,9 +4,7 @@
 
 作者：qiqihaobenben
 
----
-
-## TOC
+#### TOC
 
 * **介绍**
   * 模块的优点
@@ -56,8 +54,8 @@ module.exports = Gogogo;
 
 // main.js 引入 gogogo.js
 var Go = require('./gogogo.js');
-var g = new Go();
-g.hello(); // hello
+var say = new Go();
+say.hello(); // hello
 ```
 
 ## Node.js
@@ -84,6 +82,104 @@ g.hello(); // hello
 * Asynchronous Module Definition（异步模块定义）
 * 诞生于CommonJS的讨论中，服务于浏览器的模块加载场景，采用异步加载/回调的方式
 * AMD和CommonJS一样需要**脚本加载器**的支持（主要是对define方法的支持）
+* define既是引用模块的方式，也是定义模块的方式
+* define方法的参数有三：
+  * Module ID 模块名称
+  * Dependency Array 依赖数组
+  * Factory Function 所有依赖都可用之后执行的工厂函数 （必须）
+
+```js
+// lib/gogogo.js (独立模块，无依赖，直接定义)
+define(function() {
+    return {
+        hello: function () {
+            console.log('hello');
+        }
+    };
+});
+
+// main.js 引入 gogogo.js (非独立模块，对其他模块有依赖)
+define(['./lib/gogogo'], function(say) {
+    say.sayHello(); // hello
+})
+```
+
+## RequireJS
+
+* 前端模块化管理工具，遵循AMD规范
+* 要求每个模块均放在独立的文件之中
+* `require` 语法糖：AMD加载器会将require函数解析为Function.prototype.toString\(\)，然后对define的参数做一些转换
+
+```js
+define(function(require) {
+    var d1 = require('dep1');
+    var d2 = require('dep2');
+
+    return function() {};
+});
+
+// internally
+define(['require', 'dep1', 'dep2'], function(require) {
+    var d1 = require('dep1');
+    var d2 = require('dep2');
+
+    return function() {};
+});
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
