@@ -127,5 +127,20 @@ define(['require', 'dep1', 'dep2'], function(require) {
 });
 ```
 
+## CMD
+
+* Common Module Definition（通用模块定义），更贴近CommonJS和node.js的模块化标准
+* CMD也使用define关键字定义模块，与AMD相比区别在于：
+  * 二者模块加载虽均为异步，但AMD中会立即执行加载完毕的模块，而CMD则是按照代码中引用模块的顺序执行的（就近依赖，as lazy as possible）
+* CMD中factory可以为函数，也可以为对象或字符串
+
+## SeaJS
+
+* 遵循CMD规范
+* 有以下三种载入模块的方式
+  * seajs.use - 主要用于载入入口模块，类似AMD模块加载模式
+  * require - 正常加载
+  * require.async - 用到时再加载（懒加载）
+
 
 

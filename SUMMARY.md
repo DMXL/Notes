@@ -1,5 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [JS-Ch1-JavaScript的模块](ch1-javascriptde-mo-kuai.md)
+* [JS-JavaScript的模块](js-javascript-module.md)
+* [Web-HTTP协议入门](web-http-first-steps.md)
 
