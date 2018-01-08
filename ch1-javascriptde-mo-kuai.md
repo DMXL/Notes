@@ -100,7 +100,7 @@ define(function() {
 
 // main.js 引入 gogogo.js (非独立模块，对其他模块有依赖)
 define(['./lib/gogogo'], function(say) {
-    say.sayHello(); // hello
+    say.hello(); // hello
 })
 ```
 
@@ -126,60 +126,6 @@ define(['require', 'dep1', 'dep2'], function(require) {
     return function() {};
 });
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
