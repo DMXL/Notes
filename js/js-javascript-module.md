@@ -179,15 +179,27 @@ define(['require', 'dep1', 'dep2'], function(require) {
   * CommonJS的一个模块，就是一个脚本文件。require时会执行整个脚本，然后在内存生成一个对象
   
 ```js
+// CommonJS
 // lib.js
 var counter = 3;
-  function incCounter() {
+function incCounter() {
   counter++;
 }
-
+function getCounter() {
+  return counter;
+}
 module.exports = {
-  counter: counter,
+  counter: getCounter() {
+    
+  },
   incCounter: incCounter,
 };
+
+// ES6
+// lib.js
+export let counter = 3;
+export function incCounter() {
+  counter++;
+}
 ```
 
