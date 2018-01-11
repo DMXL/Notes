@@ -162,6 +162,7 @@ define(['require', 'dep1', 'dep2'], function(require) {
   * export命令规定的是对外的接口，必须与模块内部的变量建立一一对应关系
   * 输出接口与其对应值动态绑定（通过接口可取到模块内部实时的值，CommonJS模块输出的是值的缓存，无动态更新）
   * 可出现在模块顶层的任何位置，不能在块级作用域内
+  * `export * from 'xxx'`可实现模块的继承
 * **默认导出 export default**
   * 可导出匿名函数，导入时可为该匿名函数指定任意名称
   * 导入默认导出时不用加花括号
@@ -171,4 +172,22 @@ define(['require', 'dep1', 'dep2'], function(require) {
   * 提升到模块头部优先执行
   * 可用过wildcard（*）实现模块的整体导入
   * import命令会执行所导入的模块，可以只执行某个模块而不导入任何值
+* 模块加载的核心机制是导出值的引用
+  * 实现动态引用，用的时候再去模块里取值，且不会缓存值
+  * 由于导入的模块变量只是一个“符号链接”，所以其指向的地址是只读的（可对其添加属性，但重新赋值会报错）
+  * CommonJS模块输出的是一个值的拷贝，所以内部变化不会影响到这个值
+  * CommonJS的一个模块，就是一个脚本文件。require时会执行整个脚本，然后在内存生成一个对象
+  
+```js
+// lib.js
+var counter = 3;
+  function incCounter() {
+  counter++;
+}
+
+module.exports = {
+  counter: counter,
+  incCounter: incCounter,
+};
+```
 
