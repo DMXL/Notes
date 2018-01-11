@@ -189,9 +189,7 @@ function getCounter() {
   return counter;
 }
 module.exports = {
-  counter: getCounter() {
-    
-  },
+  counter: getCounter,
   incCounter: incCounter,
 };
 
