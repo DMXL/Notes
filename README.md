@@ -6,8 +6,10 @@ This is going to be a collection of notes, about everything, basically.
 
 ### JS
 
-[Chapter 1 - JavaScript的模块](/js-javascriptde-module.md)
+* [Module 1 - JavaScript的模块](/js/js-javascript-module.md)
+* [Module 2 - ES6标准入门](/js/js-ES6-intro.md)
+* [Module 3 - ‘宏’の初探](/js/js-macro-intro.md)
 
 ### Web
 
-[Chapter 2 - HTTP协议入门](/web-http-first-steps.md)
+* [Module 4 - HTTP协议入门](/web/web-http-first-steps.md)

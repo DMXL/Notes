@@ -131,7 +131,8 @@ define(['require', 'dep1', 'dep2'], function(require) {
 
 * Common Module Definition（通用模块定义），更贴近CommonJS和node.js的模块化标准
 * CMD也使用define关键字定义模块，与AMD相比区别在于：
-  * 二者模块加载虽均为异步，但AMD中会立即执行加载完毕的模块，而CMD则是按照代码中引用模块的顺序执行的（就近依赖，as lazy as possible）
+  * 二者模块加载虽均为异步，但AMD中会立即执行加载完毕的模块，而CMD则是按照代码中引用模块的顺序执行的（就近依赖，即用即加载，as lazy as possible）
+  * 相较于AMD中的require语法糖，CMD中的require是在真正的加载并执行代码
 * CMD中factory可以为函数，也可以为对象或字符串
 
 ## SeaJS
@@ -142,5 +143,23 @@ define(['require', 'dep1', 'dep2'], function(require) {
   * require - 正常加载
   * require.async - 用到时再加载（懒加载）
 
+## UMD
 
+* Universal Module Definition（统一模块定义），一种试图将AMD和CommonJS结合的尝试
+* 常见做法是将CommonJS语法包裹在兼容AMD的代码中
+* 其核心思想在于对IIFE（Imediately Invoked Function Expression，立即执行的函数表达式）的应用
+
+## ES6
+
+* 一个模块，就是一个对其他模块暴露自己的属性或者方法的文件
+* 设计思想是尽量静态化，从而在编译时就能确定模块的依赖关系，以及输入和输出的变量
+* **编译时加载**，而非运行时加载
+  * 与CommonJS不同，ES6模块不是对象
+  * 通过export命令显式的制定输出的代码，输入时也采用静态命令的形式
+  * 在编译时即可完成模块加载，效率更高，但无法引用模块本身
+  * 使静态分析成为可能，可以进一步拓宽JS的语法，引入宏和类型检验等依赖静态分析实现的功能
+* **导出 export**
+  * export命令
+* **默认导出 default export**
+* **导入 import**
 
