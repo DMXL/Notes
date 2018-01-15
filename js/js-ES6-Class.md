@@ -67,4 +67,6 @@ class Shape() {
     }
 }
 // 生成实例
-const x = new Shape('x', 0, 1);
+const y = new Shape('y', -1, 0);
+y.getPos(); // {x:-1,y:0}
+```
