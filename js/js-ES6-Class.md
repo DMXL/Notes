@@ -41,3 +41,4 @@ Shape.prototype.getPos(x, y) {
 
 ```js
 var x = new Shape('x', 0, 1);
+```
