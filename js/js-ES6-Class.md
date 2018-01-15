@@ -71,7 +71,7 @@ const y = new Shape('y', -1, 0);
 y.getPos(); // {x:-1,y:0}
 ```
 
-看起来好像差不多。。我们用Babel翻译一下ES6的代码：
+看起来好像差不多。。我们用[Babel](http://babeljs.io/repl)翻译一下ES6的代码：
 
 ```
 "use strict";
