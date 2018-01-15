@@ -48,7 +48,7 @@ x.getPos(); // {x:0,y:1}
 
 ```js
 // 定义Shape类
-class Shape() {
+class Shape {
     // 构造函数
     construnctor(id, x, y) {
         this.id = id;
@@ -70,3 +70,70 @@ class Shape() {
 const y = new Shape('y', -1, 0);
 y.getPos(); // {x:-1,y:0}
 ```
+
+看起来好像差不多。。我们用Babel翻译一下ES6的代码：
+
+```
+"use strict";
+
+var _createClass = (function() {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+  return function(Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+})();
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+var Shape = (function() {
+  function Shape() {
+    _classCallCheck(this, Shape);
+  }
+
+  _createClass(Shape, [
+    {
+      key: "construnctor",
+      value: function construnctor(id, x, y) {
+        this.id = id;
+        this.setPos(x, y);
+      }
+    },
+    {
+      key: "setPos",
+      value: function setPos(x, y) {
+        this.x = x;
+        this.y = y;
+      }
+    },
+    {
+      key: "getPos",
+      value: function getPos() {
+        return {
+          x: this.x,
+          y: this.y
+        };
+      }
+    }
+  ]);
+
+  return Shape;
+})();
+
+var y = new Shape("y", -1, 0);
+y.getPos();
+```
+
