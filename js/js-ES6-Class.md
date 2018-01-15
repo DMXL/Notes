@@ -19,7 +19,7 @@ ES6标准引入了类（class）的概念，然并卵。现在ES6的教科书里
 ES5定义一个叫形状（Shape）的类：
 
 ```js
-// Shape构造函数
+// 定义Shape构造函数
 function Shape(id, x, y) {
     this.id = id;
     this.setPos(x, y);
@@ -29,7 +29,7 @@ Shape.prototype.setPos(x, y) {
     this.x = x;
     this.y = y;
 }
-Shape.prototype.getPos(x, y) {
+Shape.prototype.getPos() {
     return {
         x: this.x,
         y: thix.y
@@ -43,3 +43,28 @@ Shape.prototype.getPos(x, y) {
 var x = new Shape('x', 0, 1);
 x.getPos(); // {x:0,y:1}
 ```
+
+按ES6的语法来写一遍：
+
+```js
+// 定义Shape类
+class Shape() {
+    // 构造函数
+    construnctor(id, x, y) {
+        this.id = id;
+        this.setPos(x, y);
+    }
+    // 类的公共方法
+    setPos(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    getPos() {
+        return {
+            x: this.x,
+            y: this.y
+        };
+    }
+}
+// 生成实例
+const x = new Shape('x', 0, 1);
