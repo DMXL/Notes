@@ -29,4 +29,15 @@ Shape.prototype.setPos(x, y) {
     this.x = x;
     this.y = y;
 }
+Shape.prototype.getPos(x, y) {
+    return {
+        x: this.x,
+        y: thix.y
+    };
+}
 ```
+
+生成一个Shape类的实例：
+
+```js
+var x = new Shape('x', 0, 1);
