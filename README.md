@@ -9,7 +9,7 @@ This is going to be a collection of notes, about everything, basically.
 * [JavaScript的模块](/js/js-javascript-module.html)
 * [ES6标准入门](/js/js-ES6-intro.html)
   * [ES6 Class](/js/js-ES6-class.html)
-  * [ES6 Functions 参数默认值](/js/js-ES6-functons-default-parameters.html)
+  * [ES6 Functions 参数默认值](/js/js-ES6-functions-default-parameters.html)
 * [ES7标准初探]()
 * [‘宏’](/js/js-macro-intro.html)
 
