@@ -4,8 +4,8 @@
 * [JS-JavaScript的模块](js/js-javascript-module.md)
 * [Web-HTTP协议入门](web/web-http-first-steps.md)
 * [JS-ES6标准入门](js/js-ES6-intro.md)
-* [JS-ES6-Class](js/js-ES6-Class.md)
+* [JS-ES6-Class](js/js-ES6-class.md)
 * [JS-‘宏’の初探](js/js-macro-intro.md)
-* [TIL-import声明中的@符号](js/js-ES6-functions-default-parameters.md)
-* [JS-ES6-Functions-参数默认值](js-es6-functionscan-shu-mo-ren-zhi.md)
+* [TIL-import声明中的@符号](til/til-import-with-@-symbol.md)
+* [JS-ES6-Functions-参数默认值](js/js-ES6-functions-default-parameters.md)
 
