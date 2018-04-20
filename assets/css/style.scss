@@ -3,9 +3,19 @@
 
 @import "{{ site.theme }}", "highlight";
 
+a {
+  color: #4e59ce;
+
+  &:hover {
+    color: #4d57af;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+}
+
 code {
-  color: #186aa0;
-  background-color: #ddf1ff;
+  color: #4d57af;
+  background-color: #eff1ff;
   border-radius: 3px;
   padding: 1px 4px 2px;
   font-size: 12px;
