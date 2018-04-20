@@ -3,6 +3,14 @@
 
 @import "{{ site.theme }}", "highlight";
 
+.wrapper {
+  width: 1000px;
+}
+
+section {
+  width: 660px;
+}
+
 a {
   color: #4e59ce;
 
@@ -10,6 +18,12 @@ a {
     color: #4d57af;
     font-weight: inherit;
     text-decoration: underline;
+  }
+}
+
+p, span {
+  a {
+    margin: 0 3px;
   }
 }
 
