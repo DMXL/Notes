@@ -42,6 +42,12 @@ pre.highlight {
   padding: 0;
   background-color: transparent;
 
+  code {
+    word-break: break-all;
+    padding: 0;
+    margin: 0;
+  }
+
   th, td {
     border: none;
     padding: 0;
@@ -64,7 +70,7 @@ pre.highlight {
   }
 
   .rouge-gutter {
-    width: 40px;
+    width: 32px;
   }
 
   .rouge-table:after {
