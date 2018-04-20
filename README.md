@@ -19,4 +19,4 @@ This is going to be a collection of notes, about everything, basically.
 
 ### TIL
 
-* [`import`声明中的@符号（译）](./til/import-with-at-symbol.md)
+* [`import`声明中的@符号（译）](./til/til-import-with-at-symbol.md)
