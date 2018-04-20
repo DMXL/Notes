@@ -1,7 +1,11 @@
 # ES6标准入门
 
-作者：阮一峰
-
 #### TOC
 
-* [Class](/js/js-ES6-Class.html)
+* [Class](./js-ES6-class.md)
+* [Function 参数默认值](./js-ES6-functions-default-parameters.md)
+
+#### Reference
+
+* [《ECMAScript 6 入门》（阮一峰）](http://es6.ruanyifeng.com/)
+* [You Don't Know JS by Kyle Simpson](https://github.com/getify/You-Dont-Know-JS)
