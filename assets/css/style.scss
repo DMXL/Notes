@@ -20,6 +20,11 @@ code {
   padding: 1px 4px 2px;
   font-size: 0.9em;
   margin: 0 5px;
+  word-break: break-all;
+
+  span {
+    word-break: break-all;
+  }
 }
 
 strong {
@@ -29,7 +34,7 @@ strong {
 }
 
 div.highlight {
-  font-size: 12px;
+  font-size: 13px;
   border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
@@ -43,7 +48,6 @@ pre.highlight {
   background-color: transparent;
 
   code {
-    word-break: break-all;
     padding: 0;
     margin: 0;
   }
