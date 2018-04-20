@@ -50,19 +50,20 @@ pre.highlight {
     background: #e2e2e2;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    font-family: helvetica;
     content: "Code";
   }
 }
 
 .language-js .rouge-table:after,
 .language-javascript .rouge-table:after {
-  content: "JavaScript";
+  content: "JavaScript" !important;
 }
 
 .language-shell .rouge-table:after {
-  content: "Shell";
+  content: "Shell" !important;
 }
 
 .language-bash .rouge-table:after {
-  content: "Bash";
+  content: "Bash" !important;
 }
