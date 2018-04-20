@@ -3,6 +3,21 @@
 
 @import "{{ site.theme }}", "highlight";
 
+code {
+  color: #186aa0;
+  background-color: #ddf1ff;
+  border-radius: 3px;
+  padding: 1px 4px 2px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+strong {
+  color: #333;
+  font-weight: bold;
+  padding: 0 4px;
+}
+
 div.highlight {
   font-size: 12px;
   border: none;
