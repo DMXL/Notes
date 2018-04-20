@@ -19,5 +19,4 @@ This is going to be a collection of notes, about everything, basically.
 
 ### TIL
 
-* [`import`声明中的@符号（译）](./til/import-with-@-symbol.md)
-
+* [`import`声明中的@符号（译）](./til/import-with-40%-symbol.md)
