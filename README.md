@@ -1,8 +1,4 @@
-# Notes
-
-This is going to be a collection of notes, about everything, basically.
-
----
+# TOC
 
 ### JS
 
@@ -20,3 +16,7 @@ This is going to be a collection of notes, about everything, basically.
 ### TIL
 
 * [`import`声明中的@符号（译）](./til/til-import-with-at-symbol.md)
+
+---
+
+This is going to be a collection of notes, about everything, basically.

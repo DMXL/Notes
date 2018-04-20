@@ -14,7 +14,7 @@ section {
 a {
   color: #4e59ce;
 
-  &:hover {
+  &:hover, &:focus {
     color: #4d57af;
     font-weight: inherit;
     text-decoration: underline;
