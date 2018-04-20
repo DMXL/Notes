@@ -73,7 +73,7 @@ y.getPos(); // {x:-1,y:0}
 
 看起来好像差不多。。我们用[Babel](http://babeljs.io/repl)翻译一下ES6的代码：
 
-```
+```js
 "use strict";
 
 var _createClass = (function() {
