@@ -74,6 +74,10 @@ blockquote {
   code {
     word-break: break-word;
   }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 strong {
