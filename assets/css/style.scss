@@ -18,6 +18,13 @@ section {
   }
 }
 
+@media print, screen and (max-width: 960px) {
+  section {
+    width: auto;
+  }
+}
+
+
 a {
   color: #4e59ce;
 
@@ -81,6 +88,7 @@ pre.highlight {
 
   .rouge-table {
     margin-bottom: 0;
+    font-size: 12px;
 
     .lineno {
       padding-right: 0;
