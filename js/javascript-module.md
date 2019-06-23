@@ -73,7 +73,7 @@ say.hello(); // hello
     * `.node` - 通过C/C++进行编写的Addon，通过dlopen方法进行加载
 * "./"、"../" 为按路径加载，否则，若非核心模块，则会在node\_modules中查找并加载
   * require的文件查找策略：文件模块缓存 --&gt; 原生模块（先查找原生模块缓存） --&gt; 文件模块
-    ![](assets/images/es6-class/image1.jpg)
+    ![](/Notes/assets/images/es6-class/image1.jpg)
 * Node.js通过实际文件名缓存所有加载过的文件模块，避免重复加载
 * 模块发生循环依赖时，我们只能从exports对象中得到发生在循环依赖之前的部分
 

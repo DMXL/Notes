@@ -113,18 +113,18 @@ foo() // 101
 
 未设置默认值时，参数与函数主体在同一级作用域
 
-![scope-bubbles](assets/images/es6-functions/scope-bubbles-1.jpg)
+![scope-bubbles](/Notes/assets/images/es6-functions/scope-bubbles-1.jpg)
 
 
 一旦设置了参数的默认值，函数进行声明初始化时，参数会形成一个单独的作用域
 
-![scope-bubbles](assets/images/es6-functions/scope-bubbles-2.jpg)
+![scope-bubbles](/Notes/assets/images/es6-functions/scope-bubbles-2.jpg)
 
 ### ECMA-262
 
 9.2.12 Function Declaration Instantiation
 
-![scope-bubbles](assets/images/es6-functions/ecma262-1.jpg)
+![scope-bubbles](/Notes/assets/images/es6-functions/ecma262-1.jpg)
 
 ### 软一峰的栗子
 
@@ -194,11 +194,11 @@ foo(1) // SyntaxError: Identifier 'a' has already been declared
 
 9.2.12 Function Declaration Instantiation
 
-![scope-bubbles](assets/images/es6-functions/ecma262-2.jpg)
+![scope-bubbles](/Notes/assets/images/es6-functions/ecma262-2.jpg)
 
 ### 汇报一个bug...
 
-![babel](assets/images/es6-functions/babel-1.jpg)
+![babel](/Notes/assets/images/es6-functions/babel-1.jpg)
 
 #### 结果不同
 

@@ -20,7 +20,7 @@
 2. 通过定义和隔离状态管理中的各种概念并强制遵守一定的规则，使代码更健壮
 3. 借鉴了Flux、Redux和The Elm Architecture的基本思想
 
-![Vuex](assets/images/vue-vuex/vuex.png)
+![Vuex](/Notes/assets/images/vue-vuex/vuex.png)
 
 ### Store
 

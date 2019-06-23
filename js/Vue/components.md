@@ -38,7 +38,7 @@ new Vue({
 
 在Vue中，父子组件的关系可以总结为**prop向下传递，事件向上传递**。父组件通过**prop**给子组件下发数据，子组件通过**事件**给父组件发送消息。
 
-![Components](assets/images/vue-comps/props-events.png)
+![Components](/Notes/assets/images/vue-comps/props-events.png)
 
 ### Prop
 
